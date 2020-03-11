@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SDR 2019 Respondent Website</title>
+	<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
+	<meta name="theme-color" content="#000000" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendorlibs/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="SDR.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header id="home">
+			<div class="container hdr-container">
+				<div class="hdr-left">
+					<a href=""><img class="logo" src="assets/NCSES_logo.svg" alt="NCSES Logo"></a>
+				</div>
+				<div class="hdr-center">
+					<div class="title t-white f-600">2019 Survey of Doctorate Recipients</div>
+				</div>
+				<div class="hdr-right">
+					<a href=""><img class="logo not-default ml-3" src="assets/NSF_logo.svg" alt="NSF Logo"></a>
+					<a href=""><img class="logo ml-3" src="assets/NIH_logo.svg" alt="NIH Logo"></a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="hero-img-container">
+				<div class="hero-img"></div>
+				<div class="landing-panel">
+					<div class="f-28 t-blue f-600 mb-2 text-center panel-title">2019 Survey of Doctorate Recipients</div>
+					<p class="">The <b>Survey of Doctorate Recipients (SDR)</b> is sponsored
+						by the National Center for Science and Engineering
+						Statistics (NCSES) within the National Science Foundation, and the National Institutes of Health (NIH). The SDR
+						represents doctorate-degree holders who are working,
+						retired, seeking work, or in some other situation. This
+						study provides the only data on the education and training, work experience, and career development of the
+						doctorate population. Your participation is greatly appreciated.</p>
+					<div class="form-signin my-3 text-center">
+
+
+						<label for="MainContent_txtAccessCode1" id="MainContent_Label1" class="form-signin-heading mb-2">Please enter
+							your
+							Access Code to begin</label>
+						<div>
+
+									<!-- accessCode1 -->
+							<input name="ctl00$MainContent$txtAccessCode1" type="password" maxlength="50" size="8" id="MainContent_txtAccessCode1"
+							 class="form-control access-pin" placeholder="" autocomplete="false">
+							<div class="checkbox">
+								<label class="t-red">
+
+									<!-- id="access" -->
+
+									<input id="togglepwd" type="checkbox" value="1" onchange="showPWD()">
+									<img src="assets/show_pw_icon.svg" alt="Icon for show access code"
+									 width="16" height="16"><span id="access"> Show Access Code</span>
+								</label>
+							</div>
+						</div>
+						<input type="submit" name="ctl00$MainContent$btnContinue" value="Start Survey" id="MainContent_btnContinue" class="button-default">
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="menu-buttons-wrapper">
+				<ul class="menu-buttons-list">
+					<li tabindex="0" data-target="#about">
+						About the Survey
+					</li>
+					<li tabindex="0" data-target="#faqs">
+						FAQs
+					</li>
+					<li tabindex="0" data-target="#contact">
+						Contact Us
+					</li>
+				</ul>
+			</div>
+
+			<div class="abt-survey-container" id="about">
+				<div class="container px-3 py-5">
+					<h1 class="sec-title t-white f-28 f-600 m-0 mb-4">About the Survey</h1>
+					<p class="t-white f-18">
+						Your participation allows NSCES to use the SDR
+						data to prepare two Congressionally mandated
+						reports: <b class="t-white">Women, Minorities, and Persons with
+							Disabilities in Science and Engineering</b> and
+						<b class="t-white">Science & Engineering Indicators</b>. More generally, your response to the SDR allows
+						government
+						agencies and academia to use these data for planning decisions regarding education. It is also used
+						by employers to understand and predict employment, industry, and salary trends.
+					</p>
+					<div class="abt-img-wrapper py-5 mt-2">
+						<ul class="abt-img-container-list">
+							<li>
+								<p class="t-blue f-18 f-600">
+									127,800 Internationally Residing U.S. Trained SEH Doctorates
+								</p>
+								<img src="assets/Map.png" alt="Image for Map data visualization" />
+								<p class="img-desc t-blue text-center">
+									This is a description of the data vizualization
+									consectetuer adipiscing elit, sed diam
+									nonummy nibh euismod tincidunt ut laoreet
+									dolore magna aliquam erat volutpat.
+								</p>
+								<span data-toggle="modal" data-target="#img-modal" data-target-img="1"></span>
+							</li>
+							<li>
+								<p class="t-blue f-18 f-600">
+									Doctoral Scientists and Engineers in Academia - Trends in Academic Employment PostDoc Positions
+								</p>
+								<img src="assets/Bar_graph.png" alt="Image for Chart data visualization" />
+								<p class="img-desc t-blue text-center">
+									This is a description of the data vizualization
+									consectetuer adipiscing elit, sed diam
+									nonummy nibh euismod tincidunt ut laoreet
+									dolore magna aliquam erat volutpat.
+								</p>
+								<span data-toggle="modal" data-target="#img-modal" data-target-img="2"></span>
+							</li>
+							<li>
+								<p class="t-blue f-18 f-600">
+									Trees of SDR Fields
+								</p>
+								<img src="assets/Tree.png" alt="Image for Tree data visualization" />
+								<p class="img-desc t-blue text-center">
+									This is a description of the data vizualization
+									consectetuer adipiscing elit, sed diam
+									nonummy nibh euismod tincidunt ut laoreet
+									dolore magna aliquam erat volutpat.
+								</p>
+								<span data-toggle="modal" data-target="#img-modal" data-target-img="3"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div id="faqs" class="faq-container pt-5">
+
+		    <div class="container my-5 mw-600">
+		  <div class="accordion" id="accordionExample">
+		  <div class="card">
+		    <div class="card-header" id="headingOne">
+
+		        <a class="btn btn-link d-flex" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+		          Collapsible Group Item #1
+		          <span class="ml-auto"></span></a>
+
+		    </div>
+
+		    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+
+		        <a class=" btn btn-link collapsed d-flex align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+		          Collapsible Group Item #2
+		          <span class="ml-auto"></span>
+		        </a>
+
+		    </div>
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+
+		        <a class="btn btn-link collapsed d-flex" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+		          Collapsible Group Item #3<span class="ml-auto"></span>
+		        </a>
+
+		    </div>
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		</div>
+
+		</div>
+
+
+
+
+			<!-- <div id="faqs" class="faq-container">
+				<div class="container px-3 mt-5 pb-5 faq-list-wrapper">
+					<h1 class="sec-title t-blue f-28 f-600 m-0 mb-4">FAQs</h1>
+					<div class="faq-list">
+						<span class="iques">1</span>
+						<a class="ques" data-toggle="collapse" href="#an1s" aria-expanded="false" aria-controls="an1s">
+							Who is NCSES? Who is conducting this study?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an1s">
+							<div class="ans">
+								The Survey of Doctorate Recipients (SDR) is, conducted by the National Center for Science and Engineering
+								Statistics (NCSES) within the National Science Foundation.<br>
+								Westat, a national research company located in Rockville MD, is contracted by NSF to conduct this work on their
+								behalf.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">2</span>
+						<a class="ques" data-toggle="collapse" href="#an2s" aria-expanded="false" aria-controls="an2s">
+							What is the purpose of the SDR? How will this information be used?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an2s">
+							<div class="ans">
+								The SDR is designed to provide demographic and career history information about science, engineering, and
+								health doctorate holders. Government agencies and academic researchers use data and reports from the SDR to
+								make planning decisions regarding science and engineering research, training, and employment opportunities.
+								Employers also use the SDR to understand trends in employment sectors, industry types, and salary. Students who
+								want to learn about the relationship between graduate education and careers often obtain valuable information
+								from the SDR.<br><br>
+								This study is the only comprehensive source of data on the careers of science, engineering, and health
+								doctorate holders from U.S. academic institutions. It serves as an essential and irreplaceable resource on the
+								training, work experience, and career development of a highly educated population.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">3</span>
+						<a class="ques" data-toggle="collapse" href="#an3s" aria-expanded="false" aria-controls="an3s">
+							How do I get started? How do I complete the survey?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an3s">
+							<div class="ans">
+								We encourage you to complete the questionnaire online via our secure web form. It is user-friendly and can be
+								completed at your convenience. It takes about 25 minutes to complete.<br>
+								If you prefer you can request a paper version of the survey or complete the survey by telephone with a
+								professional interviewer. Contact the survey contractor Westat, toll-free at <a href="tel:">1-###-###-####</a>
+								or send an email to
+								<a href="mailto:SDR@westat.com">SDR@westat.com</a> and we will be happy to accommodate your preference.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">4</span>
+						<a class="ques" data-toggle="collapse" href="#an4s" aria-expanded="false" aria-controls="an4s">
+							I lost my pin and/or password.
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an4s">
+							<div class="ans">
+								We can provide you with your pin and/or password information.<br>
+								Email the helpdesk at <a href="mailto:SDR@westat.com">SDR@westat.com</a> or call the helpdesk toll-free at <a
+								 href="tel:">1-###-###-####</a>.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">5</span>
+						<a class="ques" data-toggle="collapse" href="#an5s" aria-expanded="false" aria-controls="an5s">
+							How was I selected to participate in the SDR?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an5s">
+							<div class="ans">
+								The SDR sample was randomly selected from the Doctorate Record File (DRF), a database containing the name and
+								degree information of all individuals who earned research doctoral degrees from U.S. academic institutions.
+								Sample members serve as representatives of the entire U.S.-trained doctoral population in the fields of
+								science, engineering and health.<br>
+								Upon completing your doctoral degree, you were asked to complete a Survey of Earned Doctorates (SED)
+								questionnaire and this information was added to the DRF. From among those listed in the DRF up through academic
+								year 2017, you were randomly selected to participate in the Survey of Doctorate Recipients. The most recent
+								doctorate recipients listed in the DRF are added to the overall SDR sample every time the survey is conducted
+								in order to fully represent the current U.S.-educated doctorate population.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">6</span>
+						<a class="ques" data-toggle="collapse" href="#an6s" aria-expanded="false" aria-controls="an6s">
+							Who is included in SDR?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an6s">
+							<div class="ans">
+								About  124,000 out of 1.1 million (approximately 11.0%) science, engineering and health doctorate holders have
+								been asked to participate in the 2017 SDR. This includes those who received a doctorate in the biological,
+								agricultural, and environmental life sciences, computer and information sciences, mathematics and statistics,
+								the physical sciences, psychology, the social sciences, engineering, and health. It samples individuals who
+								have earned an SEH research doctoral degree from a U.S. academic institution and are less than 76 years of age.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">7</span>
+						<a class="ques" data-toggle="collapse" href="#an7s" aria-expanded="false" aria-controls="an7s">
+							Where can I see the results from prior SDR surveys?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an7s">
+							<div class="ans">
+								The National Science Foundation publishes SDR results and data in two notable report series: Characteristics of
+								Scientists and Engineers with U.S. Doctorates and Doctoral Scientists and Engineers: Profiles. Beyond these
+								biennial reports, the NSF also publishes special topic reports relating to the doctoral workforce. These
+								publications are available on-line at : <a href="www.nsf.gov/statistics/srvydoctoratework" target="_blank">www.nsf.gov/statistics/srvydoctoratework</a>.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">8</span>
+						<a class="ques" data-toggle="collapse" href="#an8s" aria-expanded="false" aria-controls="an8s">
+							I participated in the SDR just a few years ago. Why do I need to answer essentially the same questions again?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an8s">
+							<div class="ans">
+								Because the SDR is a panel study--a study of a group of individuals over a number of years--it is critical for
+								SDR to interview the same individuals over time. Examining results over time allows researchers and policy
+								makers to more clearly understand the decisions made by science, engineering, and health doctorate holders over
+								time.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">9</span>
+						<a class="ques" data-toggle="collapse" href="#an9s" aria-expanded="false" aria-controls="an9s">
+							I do not work in my doctorate field of study. Why do you still need my information in the SDR?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an9s">
+							<div class="ans">
+								The SDR includes people working in a variety of industries and fields. Some people still work in their
+								doctorate degree field and others do not. People work outside of their field of study for a variety of reasons
+								and the National Science Foundation is interested in understanding the career pathways of all individuals who
+								earned a doctorate degree whether they are still working in field or not. Your participation will help ensure
+								the career pathways of all doctorate degree-holders are represented.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">10</span>
+						<a class="ques" data-toggle="collapse" href="#an10s" aria-expanded="false" aria-controls="an10s">
+							I do not live or work in the United States. Why do you still need my information in the SDR?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an10s">
+							<div class="ans">
+								Scientists and engineers with doctoral degrees are highly trained and mobile. Many move from one country to
+								another to take advantage of opportunities in their fields. Understanding the employment opportunities and
+								career paths of science, engineering, and health doctorate holders is important no matter where they live or
+								work.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">11</span>
+						<a class="ques" data-toggle="collapse" href="#an11s" aria-expanded="false" aria-controls="an11s">
+							I am now retired. Why do you still need my information in the SDR?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an11s">
+							<div class="ans">
+								The study includes people in a variety of employment situations. Learning that you've retired--whether you've
+								retired but have since returned to work part time or full time, or whether you've stopped working entirely--is
+								important information that makes SDR trend data more complete and more useful. The National Science Foundation
+								is especially interested in how the career paths of retirees may change over time and in the current
+								economy--an economy in which some retirees need to return to work, perhaps in fields that are very different
+								from the fields of their doctoral degrees, and in which some workers may retire either earlier or later than
+								planned. The only way to track such career changes and trends is to include all respondents in the study, even
+								those retired individuals who intend to stay retired. Your participation can help to ensure that our
+								information genuinely represents a complex and changing workforce.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">12</span>
+						<a class="ques" data-toggle="collapse" href="#an12s" aria-expanded="false" aria-controls="an12s">
+							Why does the SDR ask about the week of February 1, 2019?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an12s">
+							<div class="ans">
+								This survey is conducted over a period of several months. In order to standardize data collection procedures,
+								the National Science Foundation selected the week of February 1 as a reference to assure that everyone who
+								participates will be asked about the same time period. It has no other special significance.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">13</span>
+						<a class="ques" data-toggle="collapse" href="#an13s" aria-expanded="false" aria-controls="an13s">
+							Am I required to participate?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an13s">
+							<div class="ans">
+								The SDR is voluntary. Your participation will contribute greatly to the quality and accuracy of the results, so
+								we encourage you to respond. Your responses represent not just you, but also many other highly educated
+								individuals like you; if you do not share your career and work history with the SDR, you and those that you
+								represent will not be accounted for.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">14</span>
+						<a class="ques" data-toggle="collapse" href="#an14s" aria-expanded="false" aria-controls="an14s">
+							Will my information be kept confidential?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an14s">
+							<div class="ans">
+								Your data will be kept strictly confidential and safeguarded in accordance with the Privacy Act of 1974 and the
+								Confidential Information Protection and Statistical Efficiency Act of 2018. The data collected will be
+								aggregated and used to prepare scientific reports, articles, and statistical summaries, but any information
+								released publicly will maintain the confidentiality of all participants. Results from earlier studies are
+								available at <a href="www.nsf.gov/statistics/srvydoctoratework" target="_blank">www.nsf.gov/statistics/srvydoctoratework</a>.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">15</span>
+						<a class="ques" data-toggle="collapse" href="#an15s" aria-expanded="false" aria-controls="an15s">
+							Is the study website secure?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an15s">
+							<div class="ans">
+								Yes! Westat operates a secure computer facility dedicated to confidentiality and data protection of this and
+								other federal studies. Your data will be encrypted and transmitted to and from Westat web servers through the
+								use of Secure Socket Layer (SSL) technology. This proven security protocol is widely used to support e-commerce
+								transactions, server account authentication, and data encryption.
+							</div>
+						</div>
+					</div>
+					<div class="faq-list">
+						<span class="iques">16</span>
+						<a class="ques" data-toggle="collapse" href="#an16s" aria-expanded="false" aria-controls="an16s">
+							How do I know this study is legitimate?
+							<span class="caret-down t-red">&#x25bc;</span>
+						</a>
+						<div class="collapse" id="an16s">
+							<div class="ans">
+								All federal government data collections are required to be reviewed by the U.S. Office of Management and Budget
+								(OMB). The OMB number for the 2019 SDR is OMB No????????, Expiration Date mm/dd/yyyy. You may contact the NSF
+								Project Officer, Daniel J. Foley, at <a href="tel:">1-###-###-####</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="overflow-shadow t-red">
+					<!-- Read More -->
+				</div>
+			</div> -->
+
+			<div class="contact-info-container" id="contact">
+				<div class="container px-2">
+					<h1 class="sec-title t-white f-28 f-600 m-0 mt-5 mb-2">Contact Us</h1>
+					<div class="contact-info-wrapper mt-5 pb-4">
+						<ul class="contact-info-list">
+							<li>
+								<div class="card-hdr">
+									If you have a question about the
+									survey, contact Westat:
+								</div>
+								<div class="card-content">
+									<p class="dept">Survey of Doctorate Recipients</p>
+									<div class="contact-details">
+										<img src="assets/@_icon.svg" /><a href="mailto:SDR@westat.com">SDR@westat.com</a>
+									</div>
+									<div class="contact-details"><img src="assets/phone_icon.svg" /><a href="tel:">1-###-###-####</a></div>
+								</div>
+								<img class="resp-logo" src="assets/westat_logo.svg" alt="Image for Map data visualization" />
+							</li>
+							<li>
+								<div class="card-hdr">
+									To speak directly with someone at NCSES at the National Science Foundation, contact:
+								</div>
+								<div class="card-content">
+									<p class="dept">Daniel Foley, Project Officer<br>
+										Human Resources Statistics Program<br>
+										National Center for Science and Engineering Statistics<br>
+										National Science Foundation<br></p>
+									<div class="contact-details">
+										<img src="assets/@_icon.svg" /><a href="mailto:">???????@nsf.gov</a>
+									</div>
+									<div class="contact-details"><img src="assets/phone_icon.svg" /><a href="tel:">1-###-###-####</a></div>
+								</div>
+								<img class="resp-logo" src="assets/NSF_logo.svg" alt="Image for Map data visualization" />
+							</li>
+							<li>
+								<div class="card-hdr">
+									To comment on the time you spent on the survey, contact:
+								</div>
+								<div class="card-content">
+									<p class="dept">?????????<br>
+										Reports Clearance Officer<br>
+										National Science Foundation<br>
+									</p>
+									<div class="contact-details">
+										<img src="assets/@_icon.svg" /><a href="mailto:">???????@nsf.gov</a>
+									</div>
+									<div class="contact-details"><img src="assets/phone_icon.svg" /><a href="tel:">1-###-###-####</a></div>
+								</div>
+								<img class="resp-logo" src="assets/NSF_logo.svg" alt="Image for Map data visualization" />
+							</li>
+							<li>
+								<div class="card-hdr">
+									You can also comment by writing to:
+								</div>
+								<div class="card-content">
+									<p class="dept">Office of Management and Budget
+									</p>
+									<div class="contact-details">
+										<img src="assets/letter_icon.svg" />
+										Paperwork Reduction Project<br>(OMB Number ####-####, Expiration date MM/DD/YYYY)<br>
+										Washington, DC 20503
+									</div>
+								</div>
+								<img class="resp-logo" src="assets/OMB_logo.png" alt="Image for Map data visualization" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="modal fade" id="img-modal" tabindex="-1" role="dialog" aria-labelledby="img-modal-title" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<img src="assets/Close_X_icon.svg" alt="Close" />
+					</button>
+					<div class="modal-body">
+						<div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<p class="t-white text-center f-18 f-600 mb-3">
+										127,800 Internationally Residing U.S. Trained SEH Doctorates
+									</p>
+									<img class="d-block" src="assets/Map.png" alt="Image for Map data visualization" />
+									<p class="t-white text-center f-16 my-3">
+										This is a description of the data vizualization
+										consectetuer adipiscing elit, sed diam
+										nonummy nibh euismod tincidunt ut laoreet
+										dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="carousel-item">
+									<p class="t-white text-center f-18 f-600 mb-3">
+										Doctoral Scientists and Engineers in Academia - Trends in Academic Employment PostDoc Positions
+									</p>
+									<img class="d-block" src="assets/Bar_graph.png" alt="Image for Chart data visualization" />
+									<p class="t-white text-center f-16 my-3">
+										This is a description of the data vizualization
+										consectetuer adipiscing elit, sed diam
+										nonummy nibh euismod tincidunt ut laoreet
+										dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="carousel-item">
+									<p class="t-white text-center f-18 f-600 mb-3">
+										Trees of SDR Fields
+									</p>
+									<img class="d-block" src="assets/Tree.png" alt="Image for Tree data visualization" />
+									<p class="t-white text-center f-16 my-3">
+										This is a description of the data vizualization
+										consectetuer adipiscing elit, sed diam
+										nonummy nibh euismod tincidunt ut laoreet
+										dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"><img src="assets/white_chevron.svg" alt="Previous" /></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"><img src="assets/white_chevron.svg" alt="Next" /></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-buttons-floating">
+			<ul class="menu-buttons-floating-list">
+				<li tabindex="0" data-target="#home"></li>
+				<li tabindex="0" data-target="#about"></li>
+				<li tabindex="0" data-target="#faqs"></li>
+				<li tabindex="0" data-target="#contact"></li>
+			</ul>
+		</div>
+		<span class="btn-to-top" role="button" data-target="#home">Top&nbsp;<img src="assets/white_chevron.svg" alt="To top" /></span>
+		<footer class="el-S">
+			<div class="footer-wrapper">
+				<a href="https://www.westat.com" target="_blank"><img src="assets/westat_logo.svg" alt="Westat logo" title="Westat.com home page"
+					 class="img-wes-logo" /></a>
+			</div>
+		</footer>
+		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+
+		<script>
+
+		function show() {
+			var p = document.getElementById('MainContent_txtAccessCode1');
+			p.setAttribute('type', 'text');
+		}
+
+		function hide() {
+			var p = document.getElementById('MainContent_txtAccessCode1');
+			p.setAttribute('type', 'password');
+		}
+
+		var pwShown = 0;
+
+		document.getElementById("togglepwd").addEventListener("click", function () {
+			if (pwShown == 0) {
+				pwShown = 1;
+				show();
+
+
+
+
+				$('#access').html(' Hide Access Code')
+
+			} else {
+				pwShown = 0;
+				hide();
+
+
+
+				$('#access').html(' Show Access Code')
+			}
+		}, false);
+
+		</script>
+
+
+		<script type="text/javascript">
+			// function btnContact() {
+			//     $(".contactUs").addClass("contactUs--open"), $(".contactUsOverlay").show()
+			// }
+
+			// function closeContact() {
+			//     $(".contactUs").removeClass("contactUs--open"), $(".contactUsOverlay").hide()
+			// }
+			$(document).ready(function () {
+
+				function scrollfn(t) {
+					let n = $(t),
+						o = "#home" === t ? 0 : n.offset().top;
+					$("html, body").stop().animate({
+						scrollTop: o
+					}, 1200, "swing")
+				}
+
+				scrollfn('#home');
+
+				$(".menu-buttons-list li, .menu-buttons-floating-list li, .btn-to-top").on("click", function (t) {
+					t.preventDefault(), scrollfn($(this).attr("data-target"))
+				}), $(".menu-buttons-list li, .menu-buttons-floating-list li, .btn-to-top").on("keypress", function (t) {
+					t.preventDefault(), scrollfn($(this).attr("data-target"))
+				}), $(".collapse").on("show.bs.collapse", function () {
+					$('a[href="#' + this.id + '"] .caret-down').css({
+						transform: "rotate(180deg)"
+					}), $(this).parent().find('.iques').css({
+						backgroundColor: "#0F426B"
+					})
+				}), $(".collapse").on("hide.bs.collapse", function () {
+					$('a[href="#' + this.id + '"] .caret-down').css({
+						transform: "rotate(0deg)"
+					}), $(this).parent().find('.iques').css({
+						backgroundColor: "#377F9A"
+					})
+				});
+
+				$('.abt-img-container-list li span').click(function () {
+					var current = $(this).data('target-img');
+					$('.carousel-item').each(function () {
+						$(this).removeClass('active');
+					});
+					$('.carousel-item:nth-child(' + current + ')').addClass('active');
+				})
+
+				$(window).scroll(function () {
+					(window.pageYOffset || document.documentElement.scrollTop) > 64 && window.innerWidth > 767 ? ($(".btnContact").css({
+						top: "92px"
+					}), $(".menu-buttons-floating").css({
+						opacity: "1",
+						visibility: "visible"
+					}), $('.menu-buttons-wrapper').css({
+						opacity: "0",
+						visibility: "hidden"
+					})) : ($(".btnContact").css({
+						top: "192px"
+					}), $(".menu-buttons-floating").css({
+						opacity: "0",
+						visibility: "hidden"
+					}), $('.menu-buttons-wrapper').css({
+						opacity: "1",
+						visibility: "visible"
+					}));
+
+					(window.pageYOffset || document.documentElement.scrollTop) < 64 ? ($('.btn-to-top').css({
+						opacity: "0",
+						visibility: "hidden"
+					})) : ($('.btn-to-top').css({
+						opacity: "1",
+						visibility: "visible"
+					}));
+				});
+
+			});
+		</script>
+</body>
+
+</html>
